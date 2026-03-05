@@ -1,3 +1,4 @@
+package estruturaSequencial;
 public class exemplo {
     public static void main(String[] args){
         int x;
