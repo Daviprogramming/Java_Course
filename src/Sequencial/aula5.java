@@ -1,6 +1,8 @@
+package Sequencial;
+
 import java.util.Locale;
 
-public class App {
+public class aula5 {
     public static void main(String[] args){
         
         double x = 10.35483;

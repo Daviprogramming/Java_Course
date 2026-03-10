@@ -1,3 +1,5 @@
+package Sequencial;
+
 import java.util.Locale;
 import java.util.Scanner;
 public class aula2 {

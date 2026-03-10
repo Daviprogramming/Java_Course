@@ -1,6 +1,8 @@
+package Sequencial;
+
 import java.util.Locale;
 
-public class exercicio1 {
+public class ex1 {
     public static void main(String[]args) {
         String product1 = "Computer";
         String product2 = "Office desk";
