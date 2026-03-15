@@ -1,7 +1,9 @@
 package Poo.product.application;
 
 import Poo.product.entities.Product;
+import org.w3c.dom.ls.LSOutput;
 
+import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 public class aula3 {
@@ -18,7 +20,19 @@ public class aula3 {
         System.out.println("Quantity in stock: ");
         product.quantity = sc.nextInt();
 
-        System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+        //product.toString()  serve para converter o objeto para string
+        System.out.println();
+        System.out.println("Product data: " + product);
+        System.out.println();
+        System.out.println("Enter the number of products to be added in stock: ");
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);
+        System.out.println("Updated data:" + product );
+        System.out.println();
+        System.out.println("Enter the number of products to be removed in stock: ");
+        quantity = sc.nextInt();
+        product.removeProducts(quantity);
+        System.out.println("Updated data:" + product );
 
         sc.close();
     }
