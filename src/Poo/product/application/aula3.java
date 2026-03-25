@@ -11,14 +11,13 @@ public class aula3 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Product product = new Product();
         System.out.println("Enter product data: ");
         System.out.println("Name: ");
-        product.name = sc.nextLine();
+        String name = sc.nextLine();
         System.out.println("Price: ");
-        product.price = sc.nextDouble();
-        System.out.println("Quantity in stock: ");
-        product.quantity = sc.nextInt();
+        double price = sc.nextDouble();
+
+        Product product = new Product(name,price);
 
         //product.toString()  serve para converter o objeto para string
         System.out.println();
