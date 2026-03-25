@@ -19,6 +19,11 @@ public class aula3 {
 
         Product product = new Product(name,price);
 
+        product.setName("Computador");
+        System.out.println("Updated name: " + product.getName());
+        product.setPrice(1200.00);
+        System.out.println("Updated Price: " + product.getPrice());
+
         //product.toString()  serve para converter o objeto para string
         System.out.println();
         System.out.println("Product data: " + product);
